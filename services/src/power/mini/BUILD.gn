@@ -27,14 +27,12 @@ static_library("powermanage_feature_impl") {
     "${powermgr_services_path}/include",
     "${powermgr_innerkits_path}",
     "${powermgr_kits_path}",
+    "${powermgr_kal_path}/include",
     "//base/hiviewdfx/hilog_lite/interfaces/native/kits/hilog_lite",
-    "//kernel/liteos_m/components/power",
-    "//kernel/liteos_m/kernel/include",
-    "//kernel/liteos_m/utils",
   ]
 
   deps = [
+    "${powermgr_kal_path}:powermgr_kal",
     "//foundation/systemabilitymgr/samgr_lite/samgr:samgr",
-    "//kernel/liteos_m/kernel:kernel",
   ]
 }
