@@ -14,11 +14,6 @@
 import("//build/ohos.gni")
 
 ohos_static_library("libnativeapi_battery_simulator") {
-  sanitize = {
-    cfi = true
-    cfi_cross_dso = true
-    debug = false
-  }
   branch_protector_ret = "pac_ret"
   
   public_configs = [ ":nativeapi_battery_simulator_config" ]
